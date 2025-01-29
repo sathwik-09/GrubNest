@@ -1,51 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-/**
- * - Header
- *
- *
- */
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://www.designevo.com/res/templates/thumb_small/quick-takeaway-icon.webp"
-        ></img>
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Contact us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-const RestaurantCard = (props) => {
-  const { resData } = props;
-  const {cloudinaryImageId,name,cuisines,costForTwo,avgRating} = resData.info;
-  return (
-    <div className="res-card" style={{"backgroundColor":"f0f0f0"}}>
-      <img
-        className="res-logo"
-        alt="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+ resData.info.cloudinaryImageId
-        }
-      ></img>
-      <h3>{resData.info.name}</h3>
-      <h4>{resData.info.cuisines.join(",")}</h4>
-      <h4>{resData.info.costForTwo}</h4>
-      <h4>{resData.info.avgRating}</h4>
-    </div>
-  );
-};
 const resList = [
   {
     info: {
@@ -56,8 +8,8 @@ const resList = [
       areaName: "Abids",
       costForTwo: "₹300 for two",
       cuisines: ["Biryani", "Chinese", "Kebabs"],
-      avgRating: 4.4
-    }
+      avgRating: 4.4,
+    },
   },
   {
     info: {
@@ -67,9 +19,9 @@ const resList = [
       locality: "Mehdipatnam",
       areaName: "Mehdipatnam",
       costForTwo: "₹300 for two",
-      cuisines: ["Biryani", "Hyderabadi","Chinese"],
-      avgRating: 4.4
-    }
+      cuisines: ["Boneless Biryani", "Hyderabadi", "Chinese"],
+      avgRating: 4.4,
+    },
   },
   {
     info: {
@@ -80,8 +32,8 @@ const resList = [
       areaName: "Barkas",
       costForTwo: "₹300 for two",
       cuisines: ["Biryani", "Tandoor", "Chinese"],
-      avgRating: 4.3
-    }
+      avgRating: 4.3,
+    },
   },
   {
     info: {
@@ -92,8 +44,8 @@ const resList = [
       areaName: "Panjagutta",
       costForTwo: "₹500 for two",
       cuisines: ["Biryani", "North Indian", "Chinese"],
-      avgRating: 4.4
-    }
+      avgRating: 4.4,
+    },
   },
   {
     info: {
@@ -104,8 +56,8 @@ const resList = [
       areaName: "Ghansi Bazaar",
       costForTwo: "₹500 for two",
       cuisines: ["Biryani", "Mughlai", "Hyderabadi"],
-      avgRating: 4.5
-    }
+      avgRating: 4.5,
+    },
   },
   {
     info: {
@@ -116,8 +68,8 @@ const resList = [
       areaName: "RTC Cross Road",
       costForTwo: "₹400 for two",
       cuisines: ["Biryani", "North Indian", "Chinese"],
-      avgRating: 4.3
-    }
+      avgRating: 4.3,
+    },
   },
   {
     info: {
@@ -128,8 +80,8 @@ const resList = [
       areaName: "Himayatnagar",
       costForTwo: "₹600 for two",
       cuisines: ["Biryani", "North Indian", "Chinese"],
-      avgRating: 4.2
-    }
+      avgRating: 4.2,
+    },
   },
   {
     info: {
@@ -140,8 +92,8 @@ const resList = [
       areaName: "Secunderabad",
       costForTwo: "₹250 for two",
       cuisines: ["Biryani", "Hyderabadi", "Chinese"],
-      avgRating: 4.1
-    }
+      avgRating: 4.1,
+    },
   },
   {
     info: {
@@ -152,8 +104,8 @@ const resList = [
       areaName: "Shalibanda",
       costForTwo: "₹400 for two",
       cuisines: ["Biryani", "Mughlai", "Hyderabadi"],
-      avgRating: 4.4
-    }
+      avgRating: 4.4,
+    },
   },
   {
     info: {
@@ -164,31 +116,9 @@ const resList = [
       areaName: "Charminar",
       costForTwo: "₹350 for two",
       cuisines: ["Biryani", "Mughlai", "Hyderabadi"],
-      avgRating: 4.3
-    }
-  }
+      avgRating: 4.3,
+    },
+  },
 ];
 
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="restro-container">
-      {resList.map((restaurant) => (
-        <RestaurantCard key={restaurant.info.id} resData={restaurant}/>
-      ))}
-      </div>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
-};
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default resList;

@@ -26,8 +26,9 @@
 .res-card{
   padding: 5px;
   margin: 5px;
-  width: 200px;
+  width: 190px;
   border-radius: 10px;
+  
 }
 
 .restro-container{
@@ -46,4 +47,6 @@
 
 .res-logo{
   width: 100%;
+  object-fit: cover;
+  height: 180px;
 }
