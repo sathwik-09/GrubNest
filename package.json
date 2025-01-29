@@ -1,0 +1,29 @@
+{
+  "name": "grubnest",
+  "version": "1.0.0",
+  "description": "Food Ordering App",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sathwik-09/GrubNest.git"
+  },
+  "author": "Sathwik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sathwik-09/GrubNest/issues"
+  },
+  "homepage": "https://github.com/sathwik-09/GrubNest#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
