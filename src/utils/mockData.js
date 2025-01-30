@@ -32,7 +32,7 @@ const resList = [
       areaName: "Barkas",
       costForTwo: "₹300 for two",
       cuisines: ["Biryani", "Tandoor", "Chinese"],
-      avgRating: 4.3,
+      avgRating: 2.8,
     },
   },
   {
@@ -44,7 +44,7 @@ const resList = [
       areaName: "Panjagutta",
       costForTwo: "₹500 for two",
       cuisines: ["Biryani", "North Indian", "Chinese"],
-      avgRating: 4.4,
+      avgRating: 4.1,
     },
   },
   {
@@ -68,7 +68,7 @@ const resList = [
       areaName: "RTC Cross Road",
       costForTwo: "₹400 for two",
       cuisines: ["Biryani", "North Indian", "Chinese"],
-      avgRating: 4.3,
+      avgRating: 3.9,
     },
   },
   {
@@ -80,7 +80,7 @@ const resList = [
       areaName: "Himayatnagar",
       costForTwo: "₹600 for two",
       cuisines: ["Biryani", "North Indian", "Chinese"],
-      avgRating: 4.2,
+      avgRating: 3.1,
     },
   },
   {
@@ -92,7 +92,7 @@ const resList = [
       areaName: "Secunderabad",
       costForTwo: "₹250 for two",
       cuisines: ["Biryani", "Hyderabadi", "Chinese"],
-      avgRating: 4.1,
+      avgRating: 3.8,
     },
   },
   {
@@ -119,6 +119,18 @@ const resList = [
       avgRating: 4.3,
     },
   },
+  {
+    info: {
+      id: "32902",
+      name: "Lucky Restaurant",
+      cloudinaryImageId: "c17382208869e0b09ec486e96d8709ab",
+      locality: "Nagole",
+      areaName: "Alkapuri",
+      costForTwo: "₹300 for two",
+      cuisines: ["Biryani", "Chinese", "Continental"],
+      avgRating: 4.5,
+    },
+  }
 ];
 
 export default resList;
