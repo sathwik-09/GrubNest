@@ -1,10 +1,21 @@
-const About = () => {
-  return(
-    <div>
-      <h1>Welcome to GrubNest</h1>
-      <h2>Order anything without minimum order and delivery fee</h2>
-      <h2>Enjoy your meal</h2>
-    </div>
-  )
+import User from "./User";
+import UserClass from "./UserClass";
+import React from "react";
+
+class About extends React.Component{ 
+  constructor(props){
+    super(props);
+  }
+  componentDidMount(){
+  }
+  render (){
+    return(
+      <div>
+        <h1>About</h1>
+        <UserClass name={"Sathwik"} login={"login"}/>
+      </div>
+    )
+  }
 }
+
 export default About;
