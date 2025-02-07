@@ -1,10 +1,10 @@
-import React from "react";
+import React,{useState} from "react";
 import CategoryList from "./CategoryList";
 
-const RestaurantCategories = ({ data }) => {
+const RestaurantCategories = ({ data, showItems, setshowIndex}) => {
  
   const handleClick = ()=>{
-    console.log("clicked")
+    setshowIndex();
   }
 
   return (
@@ -17,7 +17,7 @@ const RestaurantCategories = ({ data }) => {
           <span>⬇️</span>
         </div>
 
-        <CategoryList items={data.itemCards} />
+        {showItems && <CategoryList items={data.itemCards} />}
       </div>
     </div>
   );
