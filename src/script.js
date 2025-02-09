@@ -16,6 +16,7 @@ import Grocery from "./Components/Grocery";
 import UserContext from "./utils/UserContext.js";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore.js";
+import Cart from "./Components/Cart.js";
 
 const AppLayout = () => {
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="restaurants/:resId" element={<RestaurantMenu />} />
           <Route path ="grocery" element={<Grocery/>} />
+          <Route path ="cart" element={<Cart/>} />
           <Route path="*" element={<Error />} />
         </Route>
          
